@@ -53,5 +53,11 @@ public class AppController {
 	    service.delete(id);
 	    return "redirect:/";       
 	}
+	
+	@RequestMapping("/delete/{id}")
+	public String addProduct(@PathVariable(name = "id") Long id) {
+	    service.delete(id);
+	    return "redirect:/";       
+	}
 
 }
